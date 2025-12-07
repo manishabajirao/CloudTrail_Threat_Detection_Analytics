@@ -1,0 +1,353 @@
+# ============================================================================
+# CloudTrail Threat Detection & Security Analytics
+# Core Requirements File
+# ============================================================================
+
+# Core Data Processing
+# ----------------------------------------------------------------------------
+pandas>=2.0.0,<3.0.0          # DataFrame operations and data manipulation
+numpy>=1.24.0,<2.0.0          # Numerical computing and array operations
+scipy>=1.10.0,<2.0.0          # Scientific computing and statistics
+
+# Machine Learning - Core
+# ----------------------------------------------------------------------------
+scikit-learn>=1.3.0,<2.0.0    # ML algorithms and preprocessing
+xgboost>=2.0.0,<3.0.0         # Gradient boosting framework
+lightgbm>=4.0.0,<5.0.0        # Gradient boosting framework (lightweight)
+catboost>=1.2.0,<2.0.0        # Gradient boosting with categorical support
+
+# Deep Learning
+# ----------------------------------------------------------------------------
+torch>=2.0.0,<3.0.0           # PyTorch for LSTM and neural networks
+torchvision>=0.15.0,<1.0.0    # Vision utilities for PyTorch
+torchaudio>=2.0.0,<3.0.0      # Audio utilities for PyTorch
+
+# Dimensionality Reduction & Clustering
+# ----------------------------------------------------------------------------
+umap-learn>=0.5.3,<1.0.0      # UMAP for dimensionality reduction
+hdbscan>=0.8.33,<1.0.0        # Density-based clustering
+scikit-learn-extra>=0.3.0     # Additional clustering algorithms
+
+# Time Series Analysis
+# ----------------------------------------------------------------------------
+prophet>=1.1.0,<2.0.0         # Time series forecasting
+ruptures>=1.1.7,<2.0.0        # Change point detection
+statsmodels>=0.14.0,<1.0.0    # Statistical models and tests
+tslearn>=0.6.0,<1.0.0         # Time series machine learning
+
+# Visualization - Core
+# ----------------------------------------------------------------------------
+plotly>=5.17.0,<6.0.0         # Interactive visualizations
+matplotlib>=3.7.0,<4.0.0      # Static plotting
+seaborn>=0.12.0,<1.0.0        # Statistical visualizations
+kaleido>=0.2.1                # Static image export for Plotly
+
+# Visualization - Advanced
+# ----------------------------------------------------------------------------
+bokeh>=3.2.0,<4.0.0           # Interactive web visualizations
+altair>=5.0.0,<6.0.0          # Declarative visualization
+networkx>=3.1,<4.0.0          # Network graph visualization
+pyvis>=0.3.2,<1.0.0           # Interactive network graphs
+
+# Model Interpretability
+# ----------------------------------------------------------------------------
+shap>=0.43.0,<1.0.0           # SHAP values for model explanations
+lime>=0.2.0.1,<1.0.0          # Local interpretable model explanations
+eli5>=0.13.0,<1.0.0           # Model debugging and interpretation
+interpret>=0.4.0,<1.0.0       # Interpretable ML models
+dice-ml>=0.11,<1.0.0          # Counterfactual explanations
+
+# Imbalanced Learning
+# ----------------------------------------------------------------------------
+imbalanced-learn>=0.11.0,<1.0.0  # SMOTE and other resampling techniques
+
+# Data Validation
+# ----------------------------------------------------------------------------
+great-expectations>=0.18.0,<1.0.0  # Data quality and validation
+pandera>=0.17.0,<1.0.0        # DataFrame schema validation
+pydantic>=2.0.0,<3.0.0        # Data validation using Python type hints
+
+# Feature Engineering
+# ----------------------------------------------------------------------------
+featuretools>=1.27.0,<2.0.0   # Automated feature engineering
+tsfresh>=0.20.0,<1.0.0        # Time series feature extraction
+category-encoders>=2.6.0,<3.0.0  # Categorical encoding techniques
+
+# Natural Language Processing (for log analysis)
+# ----------------------------------------------------------------------------
+nltk>=3.8.0,<4.0.0            # Natural language toolkit
+spacy>=3.6.0,<4.0.0           # Industrial-strength NLP
+transformers>=4.30.0,<5.0.0   # Hugging Face transformers
+
+# AWS Integration
+# ----------------------------------------------------------------------------
+boto3>=1.28.0,<2.0.0          # AWS SDK for Python
+botocore>=1.31.0,<2.0.0       # Core AWS functionality
+s3fs>=2023.6.0,<2024.0.0      # S3 filesystem interface
+awswrangler>=3.3.0,<4.0.0     # AWS data wrangling utilities
+
+# Database & Storage
+# ----------------------------------------------------------------------------
+sqlalchemy>=2.0.0,<3.0.0      # SQL toolkit and ORM
+psycopg2-binary>=2.9.0,<3.0.0 # PostgreSQL adapter
+pymongo>=4.4.0,<5.0.0         # MongoDB driver
+redis>=4.6.0,<5.0.0           # Redis client
+pyarrow>=13.0.0,<14.0.0       # Apache Arrow for columnar data
+
+# API & Web
+# ----------------------------------------------------------------------------
+fastapi>=0.103.0,<1.0.0       # Modern web framework for APIs
+uvicorn>=0.23.0,<1.0.0        # ASGI server
+requests>=2.31.0,<3.0.0       # HTTP library
+aiohttp>=3.8.0,<4.0.0         # Async HTTP client/server
+pydantic-settings>=2.0.0,<3.0.0  # Settings management
+
+# Monitoring & Logging
+# ----------------------------------------------------------------------------
+loguru>=0.7.0,<1.0.0          # Advanced logging
+prometheus-client>=0.17.0,<1.0.0  # Prometheus metrics
+sentry-sdk>=1.30.0,<2.0.0     # Error tracking
+python-json-logger>=2.0.0,<3.0.0  # JSON logging
+
+# Notifications & Integrations
+# ----------------------------------------------------------------------------
+slack-sdk>=3.21.0,<4.0.0      # Slack API client
+jira>=3.5.0,<4.0.0            # Jira API client
+sendgrid>=6.10.0,<7.0.0       # Email notifications
+pagerduty>=2.0.0,<3.0.0       # PagerDuty integration
+
+# Security & Encryption
+# ----------------------------------------------------------------------------
+cryptography>=41.0.0,<42.0.0  # Cryptographic recipes and primitives
+python-jose>=3.3.0,<4.0.0     # JOSE implementation (JWT, etc.)
+passlib>=1.7.0,<2.0.0         # Password hashing
+pyotp>=2.9.0,<3.0.0           # Two-factor authentication
+
+# Configuration Management
+# ----------------------------------------------------------------------------
+python-dotenv>=1.0.0,<2.0.0   # Environment variable management
+pyyaml>=6.0.1,<7.0.0          # YAML parser
+toml>=0.10.0,<1.0.0           # TOML parser
+hydra-core>=1.3.0,<2.0.0      # Configuration management framework
+
+# Job Scheduling & Workflow
+# ----------------------------------------------------------------------------
+apscheduler>=3.10.0,<4.0.0    # Advanced Python scheduler
+celery>=5.3.0,<6.0.0          # Distributed task queue
+prefect>=2.11.0,<3.0.0        # Workflow orchestration
+
+# Testing & Quality
+# ----------------------------------------------------------------------------
+pytest>=7.4.0,<8.0.0          # Testing framework
+pytest-cov>=4.1.0,<5.0.0      # Coverage plugin for pytest
+pytest-mock>=3.11.0,<4.0.0    # Mock/stub utilities
+pytest-asyncio>=0.21.0,<1.0.0 # Async testing support
+hypothesis>=6.82.0,<7.0.0     # Property-based testing
+faker>=19.0.0,<20.0.0         # Fake data generation
+
+# Code Quality
+# ----------------------------------------------------------------------------
+black>=23.7.0,<24.0.0         # Code formatter
+flake8>=6.1.0,<7.0.0          # Code linter
+mypy>=1.5.0,<2.0.0            # Static type checker
+isort>=5.12.0,<6.0.0          # Import sorting
+pylint>=2.17.0,<3.0.0         # Code analyzer
+
+# Documentation
+# ----------------------------------------------------------------------------
+jupyter>=1.0.0,<2.0.0         # Jupyter notebook
+notebook>=7.0.0,<8.0.0        # Jupyter notebook server
+ipywidgets>=8.1.0,<9.0.0      # Interactive widgets
+jupyterlab>=4.0.0,<5.0.0      # JupyterLab environment
+nbconvert>=7.7.0,<8.0.0       # Convert notebooks to other formats
+sphinx>=7.1.0,<8.0.0          # Documentation generator
+sphinx-rtd-theme>=1.3.0,<2.0.0  # Read the Docs theme
+
+# Performance & Profiling
+# ----------------------------------------------------------------------------
+memory-profiler>=0.61.0,<1.0.0  # Memory usage profiler
+line-profiler>=4.0.0,<5.0.0   # Line-by-line profiler
+py-spy>=0.3.0,<1.0.0          # Sampling profiler
+numba>=0.58.0,<1.0.0          # JIT compiler for numerical functions
+
+# Parallel Processing
+# ----------------------------------------------------------------------------
+joblib>=1.3.0,<2.0.0          # Lightweight pipelining
+dask>=2023.8.0,<2024.0.0      # Parallel computing library
+dask-ml>=2023.3.0,<2024.0.0   # Scalable machine learning
+ray>=2.6.0,<3.0.0             # Distributed computing framework
+
+# Utilities
+# ----------------------------------------------------------------------------
+tqdm>=4.66.0,<5.0.0           # Progress bars
+click>=8.1.0,<9.0.0           # CLI creation
+rich>=13.5.0,<14.0.0          # Rich text and formatting
+tabulate>=0.9.0,<1.0.0        # Pretty-print tabular data
+python-dateutil>=2.8.0,<3.0.0  # Date utilities
+pytz>=2023.3                  # Timezone definitions
+
+# Graph Analytics (Optional)
+# ----------------------------------------------------------------------------
+igraph>=0.10.0,<1.0.0         # Graph analysis library
+graph-tool>=2.45,<3.0.0       # Efficient graph analysis (Linux only)
+networkit>=10.1,<11.0.0       # Large-scale network analysis
+
+# AutoML (Optional)
+# ----------------------------------------------------------------------------
+auto-sklearn>=0.15.0,<1.0.0   # Automated ML
+flaml>=2.1.0,<3.0.0           # Fast AutoML library
+optuna>=3.3.0,<4.0.0          # Hyperparameter optimization
+hyperopt>=0.2.7,<1.0.0        # Distributed hyperparameter optimization
+
+# Extras for Development
+# ----------------------------------------------------------------------------
+ipdb>=0.13.0,<1.0.0           # IPython debugger
+ipython>=8.14.0,<9.0.0        # Enhanced interactive Python
+jupyter-contrib-nbextensions>=0.7.0  # Notebook extensions
+pre-commit>=3.3.0,<4.0.0      # Git pre-commit hooks
+
+# Development Dependencies
+# Additional packages for development, testing, and debugging
+# ============================================================================
+
+# Include base requirements
+-r requirements.txt
+
+# Advanced Testing
+# ----------------------------------------------------------------------------
+pytest-xdist>=3.3.0,<4.0.0          # Parallel test execution
+pytest-benchmark>=4.0.0,<5.0.0      # Performance benchmarking
+pytest-timeout>=2.1.0,<3.0.0        # Test timeouts
+pytest-randomly>=3.13.0,<4.0.0      # Random test order
+pytest-mock>=3.11.0,<4.0.0          # Mocking utilities
+pytest-sugar>=0.9.0,<1.0.0          # Enhanced test output
+coverage[toml]>=7.3.0,<8.0.0        # Code coverage with TOML support
+
+# Code Quality & Formatting
+# ----------------------------------------------------------------------------
+black[jupyter]>=23.7.0,<24.0.0      # Code formatter with Jupyter support
+isort[colors]>=5.12.0,<6.0.0        # Import sorting with colored output
+autoflake>=2.2.0,<3.0.0             # Remove unused imports
+autopep8>=2.0.0,<3.0.0              # PEP 8 auto-formatter
+pyupgrade>=3.10.0,<4.0.0            # Upgrade Python syntax
+add-trailing-comma>=3.0.0,<4.0.0    # Add trailing commas
+
+# Linting & Type Checking
+# ----------------------------------------------------------------------------
+flake8-docstrings>=1.7.0,<2.0.0     # Docstring linting
+flake8-bugbear>=23.7.0,<24.0.0      # Additional bug detection
+flake8-comprehensions>=3.14.0,<4.0.0  # List/dict comprehension checks
+flake8-simplify>=0.20.0,<1.0.0      # Code simplification suggestions
+pep8-naming>=0.13.0,<1.0.0          # PEP 8 naming conventions
+mypy-extensions>=1.0.0,<2.0.0       # Extensions for mypy
+types-requests>=2.31.0              # Type stubs for requests
+types-PyYAML>=6.0.0                 # Type stubs for PyYAML
+types-python-dateutil>=2.8.0        # Type stubs for dateutil
+
+# Documentation Tools
+# ----------------------------------------------------------------------------
+sphinx-autodoc-typehints>=1.24.0,<2.0.0  # Type hints in docs
+sphinx-copybutton>=0.5.0,<1.0.0     # Copy button for code blocks
+myst-parser>=2.0.0,<3.0.0           # Markdown parser for Sphinx
+sphinx-autobuild>=2021.3.0,<2022.0.0  # Auto-rebuild docs
+nbsphinx>=0.9.0,<1.0.0              # Jupyter notebook support in Sphinx
+pandoc>=2.3,<3.0.0                  # Universal document converter
+
+# Debugging & Profiling
+# ----------------------------------------------------------------------------
+pudb>=2022.1.0,<2023.0.0            # Full-screen console debugger
+ipdb>=0.13.0,<1.0.0                 # IPython debugger
+pdbpp>=0.10.0,<1.0.0                # Enhanced debugger
+snakeviz>=2.2.0,<3.0.0              # cProfile visualization
+guppy3>=3.1.0,<4.0.0                # Memory profiling
+objgraph>=3.6.0,<4.0.0              # Object reference graphs
+scalene>=1.5.0,<2.0.0               # High-performance CPU/memory profiler
+austin-python>=1.7.0,<2.0.0         # Frame stack sampler
+
+# Development Utilities
+# ----------------------------------------------------------------------------
+watchdog>=3.0.0,<4.0.0              # File system event monitoring
+devtools>=0.12.0,<1.0.0             # Debug print utilities
+icecream>=2.1.0,<3.0.0              # Sweet debugging tool
+better-exceptions>=0.3.0,<1.0.0     # Pretty exception formatting
+colorama>=0.4.0,<1.0.0              # Colored terminal output
+termcolor>=2.3.0,<3.0.0             # ANSI color formatting
+
+# Jupyter Enhancements
+# ----------------------------------------------------------------------------
+jupyter-black>=0.3.0,<1.0.0         # Black formatter for Jupyter
+jupyter-dash>=0.4.0,<1.0.0          # Plotly Dash in Jupyter
+jupyterlab-code-formatter>=2.2.0,<3.0.0  # Code formatting extension
+jupyterlab-git>=0.44.0,<1.0.0       # Git extension for JupyterLab
+nbdime>=3.2.0,<4.0.0                # Diff and merge for notebooks
+jupytext>=1.15.0,<2.0.0             # Jupyter notebooks as scripts
+
+# Data Exploration
+# ----------------------------------------------------------------------------
+pandas-profiling>=3.6.0,<4.0.0      # Automated EDA report generation
+sweetviz>=2.3.0,<3.0.0              # Visual EDA tool
+dataprep>=0.4.0,<1.0.0              # Data preparation toolkit
+missingno>=0.5.0,<1.0.0             # Missing data visualization
+pivottablejs>=0.9.0,<1.0.0          # Interactive pivot tables
+
+# API & Mock Servers
+# ----------------------------------------------------------------------------
+httpx>=0.24.0,<1.0.0                # Modern HTTP client
+responses>=0.23.0,<1.0.0            # Mock HTTP requests
+vcrpy>=5.1.0,<6.0.0                 # Record and replay HTTP interactions
+faker-web>=0.4.0,<1.0.0             # Web-specific fake data
+moto>=4.2.0,<5.0.0                  # Mock AWS services
+
+# Security Scanning
+# ----------------------------------------------------------------------------
+bandit>=1.7.0,<2.0.0                # Security linter
+safety>=2.3.0,<3.0.0                # Check for known vulnerabilities
+pip-audit>=2.6.0,<3.0.0             # Audit dependencies for vulnerabilities
+detect-secrets>=1.4.0,<2.0.0        # Detect secrets in code
+
+# Performance Tools
+# ----------------------------------------------------------------------------
+filprofiler>=2023.3.0,<2024.0.0     # Memory profiler for data science
+memray>=1.9.0,<2.0.0                # Memory profiler from Bloomberg
+pyinstrument>=4.5.0,<5.0.0          # Statistical profiler
+
+# Build & Packaging
+# ----------------------------------------------------------------------------
+build>=0.10.0,<1.0.0                # Build frontend for PEP 517
+twine>=4.0.0,<5.0.0                 # Upload packages to PyPI
+wheel>=0.41.0,<1.0.0                # Built distribution format
+setuptools>=68.0.0,<69.0.0          # Build system
+setuptools-scm>=7.1.0,<8.0.0        # Version from git tags
+
+# Container & Deployment
+# ----------------------------------------------------------------------------
+docker>=6.1.0,<7.0.0                # Docker SDK for Python
+kubernetes>=27.2.0,<28.0.0          # Kubernetes client
+ansible>=8.0.0,<9.0.0               # IT automation
+terraform-compliance>=1.3.0,<2.0.0  # Terraform testing
+
+# Database Testing
+# ----------------------------------------------------------------------------
+sqlalchemy-utils>=0.41.0,<1.0.0     # SQLAlchemy utilities
+factory-boy>=3.3.0,<4.0.0           # Test fixtures
+freezegun>=1.2.0,<2.0.0             # Mock datetime
+
+# Git & Version Control
+# ----------------------------------------------------------------------------
+gitpython>=3.1.0,<4.0.0             # Git integration
+pre-commit>=3.3.0,<4.0.0            # Git hook scripts
+commitizen>=3.6.0,<4.0.0            # Conventional commits
+
+# Notebook Testing
+# ----------------------------------------------------------------------------
+nbval>=0.10.0,<1.0.0                # Validate notebook outputs
+papermill>=2.4.0,<3.0.0             # Parameterize and execute notebooks
+nbqa>=1.7.0,<2.0.0                  # Run linters on notebooks
+nbmake>=1.4.0,<2.0.0                # Test notebooks with pytest
+
+# ============================================================================
+# Development Environment
+# Recommended: Create a separate virtual environment for development
+# Usage: pip install -r requirements-dev.txt
+# ============================================================================
+
